@@ -1,0 +1,15 @@
+body {
+    &.test {
+        color: gold !important;
+    }
+
+    * {
+        background-color: red !important;
+    }
+
+    @for $i from 1 through 3 {
+        .test-#{$i} {
+            background-color: gold !important;
+        }
+    }
+}
