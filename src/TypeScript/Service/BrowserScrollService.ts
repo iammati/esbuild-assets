@@ -3,11 +3,11 @@ export default class BrowserScrollService {
      * @function removeUriHash
      * @description Removes the entire hash of the location.href and updates it in the URI bar.
      *
-     * Credits: https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r#5298684
+     * @see https://stackoverflow.com/questions/1397329/how-to-remove-the-hash-from-window-location-url-with-javascript-without-page-r#5298684
      *
      * @returns {void}
      */
-    removeUriHash() {
+    public removeUriHash(): void {
         const loc = window.location;
 
         let scrollV,
