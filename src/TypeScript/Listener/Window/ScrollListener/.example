@@ -1,7 +1,0 @@
-Application.getContainer().get('LoadEvent').addListener(() => {
-    console.log('Load event triggered as listener');
-
-    Application.getContainer().get('ScrollEvent').addListener(() => {
-        console.log('Scroll event triggered as listener');
-    });
-});

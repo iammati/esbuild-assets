@@ -1,7 +1,5 @@
 export default class AbstractListener {
-    constructor () {
-        this.listeners = [];
-    }
+    protected listeners = [];
 
     listener = e => this.listeners.forEach(listener => listener(e));
 }
